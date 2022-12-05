@@ -13,9 +13,8 @@ body {
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   background-color: rgb(25, 59, 25);
   box-shadow: 5px 5px 5px rgb(16, 46, 16);
   padding: 6px 10px;
@@ -46,9 +45,8 @@ body {
 .main .nav-menu {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 10px;
   font-size: 28px;
   font-weight: 700;

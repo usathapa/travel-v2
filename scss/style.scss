@@ -1,10 +1,10 @@
 @import "./resets";
 @import "./variables";
 
-@mixin flexcenter($direction) {
+@mixin flexcenter($direction, $justify-content) {
   display: flex;
   flex-direction: $direction;
-  justify-content: center;
+  justify-content: $justify-content;
   align-items: center;
 }
 
@@ -15,8 +15,8 @@ body {
 }
 
 .header {
-  @include flexcenter(row);
-  justify-content: space-between;
+  @include flexcenter(row, space-between);
+
   background-color: $primary-color;
   box-shadow: 5px 5px 5px rgb(16, 46, 16);
   padding: 6px 10px;
@@ -49,8 +49,8 @@ body {
   width: 100%;
 
   .nav-menu {
-    @include flexcenter(row);
-    justify-content: space-between;
+    @include flexcenter(row, space-between);
+
     padding: 10px;
     font-size: map-get($font-size, medium);
     font-weight: map-get($map: $font-weight, $key: bold);
