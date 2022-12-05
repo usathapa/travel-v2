@@ -1,0 +1,76 @@
+@import "./resets";
+@import "./variables";
+
+@mixin flexcenter($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: $background-color;
+  color: $primary-text;
+  font-family: $font;
+}
+
+.header {
+  @include flexcenter(row);
+  justify-content: space-between;
+  background-color: $primary-color;
+  box-shadow: 5px 5px 5px rgb(16, 46, 16);
+  padding: 6px 10px;
+
+  h1 {
+    margin: 0;
+
+    &:hover {
+      color: $ternary-color;
+      cursor: pointer;
+    }
+  }
+
+  a {
+    color: $primary-text;
+    padding: 4px 8px;
+
+    &:hover {
+      color: $ternary-color;
+      cursor: pointer;
+    }
+  }
+}
+
+.main {
+  background-image: url("/dist/images/bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+
+  .nav-menu {
+    @include flexcenter(row);
+    justify-content: space-between;
+    padding: 10px;
+    font-size: map-get($font-size, medium);
+    font-weight: map-get($map: $font-weight, $key: bold);
+
+    .nav-logo {
+      &:hover {
+        color: $ternary-color;
+      }
+    }
+
+    .nav-lists {
+      a {
+        text-decoration: none;
+        color: $primary-text;
+        padding: 0 8px;
+
+        &:hover {
+          color: $ternary-color;
+        }
+      }
+    }
+  }
+}
