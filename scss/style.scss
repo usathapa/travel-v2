@@ -1,10 +1,10 @@
 @import "./resets";
 @import "./variables";
 
-@mixin flexcenter($direction, $justify-content) {
+@mixin flexcenter($direction, $justifycontent) {
   display: flex;
   flex-direction: $direction;
-  justify-content: $justify-content;
+  justify-content: $justifycontent;
   align-items: center;
 }
 
@@ -101,4 +101,99 @@ body {
       margin: 10px;
     }
   }
+}
+
+.gallery {
+  width: 100%;
+  padding-bottom: 10px;
+
+  .title {
+    @include flexcenter(row, center);
+    padding: 10px;
+    background-color: $ternary-color;
+    color: $secondary-color;
+  }
+
+  .gallery-cards {
+    @include flexcenter(column, center);
+    gap: 15px;
+  }
+
+  .gallery-card {
+    width: 250px;
+    height: 400px;
+    width: 80%;
+    margin: auto;
+    background-color: $primary-color;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(16, 46, 16);
+  }
+  img {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px 20px 0 0;
+  }
+  .card-content {
+    @include flexcenter(column, center);
+    gap: 10px;
+    padding-left: 10px;
+
+    h3 {
+      font-size: map-get($map: $font-size, $key: medium);
+    }
+
+    p {
+      font-size: map-get($map: $font-size, $key: small);
+    }
+  }
+}
+
+.contact {
+  padding-bottom: 20px;
+  h2 {
+    @include flexcenter(row, center);
+    padding: 10px 10px 20px 10px;
+    background-color: $ternary-color;
+    color: $secondary-color;
+  }
+  form {
+    @include flexcenter(column, center);
+
+    width: 50%;
+    margin: auto;
+    gap: 15px;
+
+    input {
+      width: 100%;
+      padding: 8px;
+      border-radius: 6px;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border-radius: 6px;
+    }
+
+    button {
+      width: 100%;
+      padding: 8px;
+      border-radius: 6px;
+      border: none;
+      background-color: $primary-color;
+
+      &:hover {
+        background-color: rgba($color: rgb(114, 155, 109), $alpha: 0.4);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.footer {
+  @include flexcenter(row, center);
+  font-size: map-get($map: $font-size, $key: small);
+  padding: 10px;
+  background-color: $ternary-color;
+  color: $secondary-color;
 }

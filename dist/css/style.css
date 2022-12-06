@@ -87,4 +87,107 @@ body {
 .main .main-content hr {
   width: 100%;
   margin: 10px;
+}
+
+.gallery {
+  width: 100%;
+  padding-bottom: 10px;
+}
+.gallery .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(200, 199, 199);
+  color: rgb(93, 132, 93);
+}
+.gallery .gallery-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.gallery .gallery-card {
+  width: 250px;
+  height: 400px;
+  width: 80%;
+  margin: auto;
+  background-color: rgb(25, 59, 25);
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgb(16, 46, 16);
+}
+.gallery img {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px 20px 0 0;
+}
+.gallery .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-left: 10px;
+}
+.gallery .card-content h3 {
+  font-size: 28px;
+}
+.gallery .card-content p {
+  font-size: 16px;
+}
+
+.contact {
+  padding-bottom: 20px;
+}
+.contact h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px 20px 10px;
+  background-color: rgb(200, 199, 199);
+  color: rgb(93, 132, 93);
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+  gap: 15px;
+}
+.contact form input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+}
+.contact form textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+}
+.contact form button {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  background-color: rgb(25, 59, 25);
+}
+.contact form button:hover {
+  background-color: rgba(114, 155, 109, 0.4);
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  padding: 10px;
+  background-color: rgb(200, 199, 199);
+  color: rgb(93, 132, 93);
 }/*# sourceMappingURL=style.css.map */
