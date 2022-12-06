@@ -9,7 +9,8 @@
 }
 
 body {
-  background-color: $background-color;
+  background-image: url("/dist/images/pattern1.png");
+  background-repeat: repeat;
   color: $primary-text;
   font-family: $font;
 }
@@ -57,7 +58,10 @@ body {
 
     .nav-logo {
       &:hover {
-        color: $ternary-color;
+        background-color: rgba($color: rgb(94, 127, 89), $alpha: 0.4);
+        cursor: pointer;
+        border-radius: 5px;
+        padding: 5px;
       }
     }
 
@@ -68,7 +72,9 @@ body {
         padding: 0 8px;
 
         &:hover {
-          color: $ternary-color;
+          background-color: rgba($color: rgb(94, 127, 89), $alpha: 0.4);
+          cursor: pointer;
+          border-radius: 5px;
         }
       }
     }
@@ -110,12 +116,13 @@ body {
   .title {
     @include flexcenter(row, center);
     padding: 10px;
-    background-color: $ternary-color;
-    color: $secondary-color;
+    background-color: $primary-color;
+    color: $primary-text;
   }
 
   .gallery-cards {
     @include flexcenter(column, center);
+    margin-top: 20px;
     gap: 15px;
   }
 
@@ -149,18 +156,24 @@ body {
 }
 
 .contact {
-  padding-bottom: 20px;
+  width: 60%;
+  margin: 20px auto;
+  background-color: $primary-color;
+  box-shadow: 5px 5px 5px rgb(58, 58, 58);
+  padding: 10px;
+  border-radius: 10px;
+
   h2 {
     @include flexcenter(row, center);
     padding: 10px 10px 20px 10px;
-    background-color: $ternary-color;
-    color: $secondary-color;
+    // background-color: $ternary-color;
+    // color: $secondary-color;
   }
   form {
     @include flexcenter(column, center);
 
-    width: 50%;
-    margin: auto;
+    width: 70%;
+    margin: 15px auto;
     gap: 15px;
 
     input {
@@ -181,6 +194,7 @@ body {
       border-radius: 6px;
       border: none;
       background-color: $primary-color;
+      color: $primary-text;
 
       &:hover {
         background-color: rgba($color: rgb(114, 155, 109), $alpha: 0.4);
@@ -194,6 +208,6 @@ body {
   @include flexcenter(row, center);
   font-size: map-get($map: $font-size, $key: small);
   padding: 10px;
-  background-color: $ternary-color;
-  color: $secondary-color;
+  background-color: $primary-color;
+  color: $primary-text;
 }

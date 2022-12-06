@@ -5,7 +5,8 @@
 }
 
 body {
-  background-color: rgb(47, 46, 46);
+  background-image: url("/dist/images/pattern1.png");
+  background-repeat: repeat;
   color: white;
   font-family: "Dancing Script", cursive;
 }
@@ -15,7 +16,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(25, 59, 25);
+  background-color: rgb(51, 101, 51);
   box-shadow: 5px 5px 5px rgb(16, 46, 16);
   padding: 6px 10px;
 }
@@ -52,7 +53,10 @@ body {
   font-weight: 700;
 }
 .main .nav-menu .nav-logo:hover {
-  color: rgb(200, 199, 199);
+  background-color: rgba(94, 127, 89, 0.4);
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px;
 }
 .main .nav-menu .nav-lists a {
   text-decoration: none;
@@ -60,7 +64,9 @@ body {
   padding: 0 8px;
 }
 .main .nav-menu .nav-lists a:hover {
-  color: rgb(200, 199, 199);
+  background-color: rgba(94, 127, 89, 0.4);
+  cursor: pointer;
+  border-radius: 5px;
 }
 .main .main-content {
   display: flex;
@@ -99,14 +105,15 @@ body {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background-color: rgb(200, 199, 199);
-  color: rgb(93, 132, 93);
+  background-color: rgb(51, 101, 51);
+  color: white;
 }
 .gallery .gallery-cards {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
   gap: 15px;
 }
 .gallery .gallery-card {
@@ -114,7 +121,7 @@ body {
   height: 400px;
   width: 80%;
   margin: auto;
-  background-color: rgb(25, 59, 25);
+  background-color: rgb(51, 101, 51);
   border-radius: 20px;
   box-shadow: 5px 5px 5px rgb(16, 46, 16);
 }
@@ -139,7 +146,12 @@ body {
 }
 
 .contact {
-  padding-bottom: 20px;
+  width: 60%;
+  margin: 20px auto;
+  background-color: rgb(51, 101, 51);
+  box-shadow: 5px 5px 5px rgb(58, 58, 58);
+  padding: 10px;
+  border-radius: 10px;
 }
 .contact h2 {
   display: flex;
@@ -147,16 +159,14 @@ body {
   justify-content: center;
   align-items: center;
   padding: 10px 10px 20px 10px;
-  background-color: rgb(200, 199, 199);
-  color: rgb(93, 132, 93);
 }
 .contact form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
-  margin: auto;
+  width: 70%;
+  margin: 15px auto;
   gap: 15px;
 }
 .contact form input {
@@ -174,7 +184,8 @@ body {
   padding: 8px;
   border-radius: 6px;
   border: none;
-  background-color: rgb(25, 59, 25);
+  background-color: rgb(51, 101, 51);
+  color: white;
 }
 .contact form button:hover {
   background-color: rgba(114, 155, 109, 0.4);
@@ -188,6 +199,6 @@ body {
   align-items: center;
   font-size: 16px;
   padding: 10px;
-  background-color: rgb(200, 199, 199);
-  color: rgb(93, 132, 93);
+  background-color: rgb(51, 101, 51);
+  color: white;
 }/*# sourceMappingURL=style.css.map */
