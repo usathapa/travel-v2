@@ -39,7 +39,7 @@ body {
   background-image: url("/dist/images/bg2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
+  height: 100vh;
   width: 100%;
 }
 .main .nav-menu {
@@ -61,4 +61,30 @@ body {
 }
 .main .nav-menu .nav-lists a:hover {
   color: rgb(200, 199, 199);
+}
+.main .main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 20%;
+  margin: 25% auto;
+  background-color: rgba(172, 166, 166, 0.4);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.main .main-content:hover {
+  background-color: rgba(114, 155, 109, 0.4);
+  cursor: pointer;
+}
+.main .main-content h3 {
+  font-size: 28px;
+}
+.main .main-content h4 {
+  font-size: 20px;
+}
+.main .main-content hr {
+  width: 100%;
+  margin: 10px;
 }/*# sourceMappingURL=style.css.map */

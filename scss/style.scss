@@ -45,7 +45,7 @@ body {
   background-image: url("/dist/images/bg2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
+  height: 100vh;
   width: 100%;
 
   .nav-menu {
@@ -71,6 +71,34 @@ body {
           color: $ternary-color;
         }
       }
+    }
+  }
+
+  .main-content {
+    @include flexcenter(column, center);
+    width: 40%;
+    height: 20%;
+    margin: 25% auto;
+    background-color: rgba($color: rgb(172, 166, 166), $alpha: 0.4);
+    padding: 10px 20px;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: rgba($color: rgb(114, 155, 109), $alpha: 0.4);
+      cursor: pointer;
+    }
+
+    h3 {
+      font-size: map-get($map: $font-size, $key: medium);
+    }
+
+    h4 {
+      font-size: map-get($map: $font-size, $key: regular);
+    }
+
+    hr {
+      width: 100%;
+      margin: 10px;
     }
   }
 }
